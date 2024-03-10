@@ -50,3 +50,86 @@
 .active {
     background-color: #717171;
 }
+
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: auto;
+}
+
+.box {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header_box {
+    background-color: #f0f0f0;
+}
+
+/* 添加下箭头 */
+.toggle-header-btn::after {
+    content: "\25BE"; /* Unicode 编码表示下箭头 */
+    float: right;
+    margin-right: 20px;
+    transition: transform 0.3s; /* 添加过渡效果 */
+}
+
+/* 初始状态为向下箭头 */
+.toggle-header-btn.collapsed::after {
+    transform: rotate(0deg); /* 顺时针旋转0度 */
+}
+
+/* 展开状态为向上箭头 */
+.toggle-header-btn:not(.collapsed)::after {
+    transform: rotate(180deg); /* 顺时针旋转180度 */
+}
+
+.content {
+    padding: 5% 10% 0 10%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.content p {
+    margin-bottom: 10px;
+}
+
+.toggle-header-btn{
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+    text-align: left;
+    color: white;
+    font-size: 25px;
+    background-color: #03a9f4;
+    border: #03a9f4;
+    border-top-left-radius: 1%;
+    border-top-right-radius: 1%;
+}
+
+.new_box {
+    text-align: center;
+}
+.new_box button {
+    display: inline-block;
+    padding: 12px 15px; 
+    margin: 2% 0 3% 0;
+    background-color: black; 
+    color: white; 
+    border-radius: 50px; 
+    text-decoration: none; 
+    transition: background-color 0.3s, color 0.3s; /* 添加過渡效果 */
+}
+
+.new_box button:hover {
+    background-color: white; 
+    color: black;
+}
