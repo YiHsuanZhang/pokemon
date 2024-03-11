@@ -102,6 +102,21 @@
     margin-bottom: 10px;
 }
 
+.content,
+.new_box {
+    opacity: 1; /* 設置初始透明度為完全不透明 */
+    max-height: 1000px; /* 設置最大高度為一個最大的值 */
+    overflow: hidden; /*隱藏超出部分 */
+    transition: max-height 0.5s ease; /* 添加過濾效果 */
+}
+
+.hidden {
+    max-height: 0; /* 隱藏內容 */
+    padding: 0;
+    opacity: 0; /*設置隱藏時的透明度為完全透明*/
+    pointer-events: none; /* 隱藏的同時禁用元素的交互 */
+}
+
 .toggle-header-btn{
     width: 100%;
     height: 50px;
@@ -121,7 +136,7 @@
 .new_box button {
     display: inline-block;
     padding: 12px 15px; 
-    margin: 2% 0 3% 0;
+    margin: 2% 0 4% 0;
     background-color: black; 
     color: white; 
     border-radius: 50px; 
