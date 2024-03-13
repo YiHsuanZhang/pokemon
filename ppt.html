@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrolling PPT Style</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .slide {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2em;
+        }
+
+        .slide:nth-child(even) {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slide" id="slide1">
+        <h1>Slide 1</h1>
+        <p>Introduction to something amazing...</p>
+    </div>
+    <div class="slide" id="slide2">
+        <h1>Slide 2</h1>
+        <p>More details about the amazing thing...</p>
+    </div>
+    <div class="slide" id="slide3">
+        <h1>Slide 3</h1>
+        <p>Conclusion and next steps...</p>
+    </div>
+    <script>
+        window.addEventListener('scroll', function () {
+            var currentSlide = Math.floor(window.scrollY / window.innerHeight) + 1;
+            document.querySelectorAll('.slide').forEach(function (slide) {
+                slide.style.opacity = 0.5;
+            });
+            document.getElementById('slide' + currentSlide).style.opacity = 1;
+        });
+    </script>
+</body>
+
+</html>

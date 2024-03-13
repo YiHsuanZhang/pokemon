@@ -26,7 +26,7 @@
                 <div class="header_right">
                     <div class="right_body">
                         <ul class="right_body_list">
-
+                            
                             <li class="global_right_moviegame">
                                 <a class="right_moviegame" href="top_one.html">電視動畫系列</a>
                             </li>
@@ -121,7 +121,9 @@
                         </p>
                     </div>
                     <div class="new_box">
-                        <button class="toggle-btn">瀏覽更多最新消息&#160;&#160;&#160;&#160;&#10095;</button>
+                        <button class="toggle-btn">
+                            <span>寶可夢地平線 : 系列</span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -272,26 +274,14 @@
 
 
         document.addEventListener("DOMContentLoaded", function () {
-            var toggleHeaderBtn = document.querySelector(".toggle-header-btn");
+            const toggleBtn = document.querySelector('.toggle-header-btn');
+            const content = document.querySelector('.content');
+            const newBox = document.querySelector('.new_box');
 
-            toggleHeaderBtn.addEventListener("click", function () {
-                var box = this.closest(".box");
-                var content = box.querySelector(".content");
-                var newBox = box.querySelector(".new_box");
-
+            toggleBtn.addEventListener('click', function () {
+                this.classList.toggle('active');
                 content.classList.toggle("hidden");
                 newBox.classList.toggle("hidden");
-            
-
-            // 切换箭头方向
-                var arrow = toggleHeaderBtn.querySelector(".arrow");
-                rrow.classList.toggle("down"); 
-            });
-            var toggleContentBtn = document.querySelector(".toggle-btn");
-
-            toggleContentBtn.addEventListener("click", function () {
-                var box = this.parentNode;
-                box.classList.toggle("open");
             });
         });
 
