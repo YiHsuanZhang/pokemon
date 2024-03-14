@@ -1,0 +1,31 @@
+*img{
+    width: 100%;
+}
+
+.bgc_body{
+    background-color: #1b252f;
+    padding: 0;
+}
+.body_container{
+    background-image: url(../img/TOP09/list_top_bg.jpg);
+    position: relative;
+    min-width: 950px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.container_content{
+    width: 100%;
+    margin: auto;
+}
+.pokemon_list_header{
+    width: 100%;
+    background-image: url(../img/TOP09/pokedex_bg.png);
+    background-size: 100% auto;
+}
+
+
+
+.pokemon_list_sub{
+    background-image: url(../img/TOP09/list_bg.jpg);
+}
