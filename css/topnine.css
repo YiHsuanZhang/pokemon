@@ -1,31 +1,67 @@
 *img{
-    width: 100%;
+  width: 100%;
+  height: auto;
 }
 
 .bgc_body{
-    background-color: #1b252f;
-    padding: 0;
+  background-color: #1b252f;
+  padding: 0;
 }
 .body_container{
-    background-image: url(../img/TOP09/list_top_bg.jpg);
-    position: relative;
-    min-width: 950px;
-    max-width: 1400px;
-    margin: 0 auto;
+  background-image: url(../img/TOP09/list_top_bg.jpg);
+  position: relative;
+  min-width: 950px;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  overflow: hidden;
+  background-size: 100% auto;
 }
 
 .container_content{
-    width: 100%;
-    margin: auto;
+  width: 100%;
+  background-image: url(../img/TOP09/pokedex_bg.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat; /*讓圖像只顯示一個*/
+  position: relative;
+  z-index: 1;
 }
-.pokemon_list_header{
-    width: 100%;
-    background-image: url(../img/TOP09/pokedex_bg.png);
-    background-size: 100% auto;
+.pokemon-list_header{
+  width: 100%;
 }
 
+/* 中間部分 s */
+.pokemon_list_main{
+  position: relative;
+  width: 100%;
+}
+.pokemon_list_main, .pokemon_img{
+  width: 100%;
+}
+/* 定義動畫 */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
+/* 應用到圖片 */
+.pokemon_img_block {
+  animation: spin 2.5s linear infinite; /* 2.5秒鐘轉一圈，線形變化，無限循環 */
+  width: 100%;
+  display: block;
+  position: relative;
+  top: -85px;
+}
+.pokemon_img_block img{
+  max-width: 100%; /*讓圖片寬度不超過父元素寬度*/
+  height: auto; /*讓圖片高度根據寬度等比例縮放*/
+}
+/* 定義動畫 e */
 
 .pokemon_list_sub{
-    background-image: url(../img/TOP09/list_bg.jpg);
+  background-image: url(../img/TOP09/list_bg.jpg);
 }
