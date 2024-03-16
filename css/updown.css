@@ -1,10 +1,11 @@
 header{
     width: 100%;
+    height: 70px;
     margin: auto;
-    align-items: center;
     display: flex;
-    max-width: 1170px;
+    max-width: 1050px;
     padding-right: 10%;
+    align-items: flex-end;
 }
 body{
     margin: 0;
@@ -30,7 +31,9 @@ body{
 
 .header_left{
     width: 25%;
-    max-width: 1170px;
+    position: relative;
+    top: 10px;
+    left: -30px;
 }
 
 .header_left img{
@@ -43,7 +46,9 @@ h1{
 /* 頂端右側選項 */
 .header_right{
     width: 90%;
-    max-width: 1170px;
+    position: relative;
+    left: -45px;
+    top: 5px;
     font-size: 14px;
 }
 .right_body{
@@ -74,8 +79,8 @@ h1{
     padding: 10px;
     margin: 3px;
     border-bottom: 4px solid #03a9f4;
-    border-top-left-radius: 5%; /* 左上角設為圓形 */
-    border-top-right-radius: 5%; /* 右上角設為圓形 */
+    border-top-left-radius: 5px; /* 左上角設為圓形 */
+    border-top-right-radius: 5px; /* 右上角設為圓形 */
     position: relative; /* 添加相對定位 */
     overflow: hidden; 
 }
@@ -109,8 +114,8 @@ h1{
     padding: 10px;
     margin: 3px;
     border-bottom: 4px solid #ff9600;
-    border-top-left-radius: 5%; /* 左上角設為圓形 */
-    border-top-right-radius: 5%; /* 右上角設為圓形 */
+    border-top-left-radius: 5px; /* 左上角設為圓形 */
+    border-top-right-radius: 5px; /* 右上角設為圓形 */
     position: relative; /* 添加相對定位 */
     overflow: hidden; /* 隱藏超出部分 */
 }
@@ -142,8 +147,8 @@ h1{
     padding: 10px;
     margin: 3px;
     border-bottom: 4px solid #4caf50;
-    border-top-left-radius: 5%; /* 左上角設為圓形 */
-    border-top-right-radius: 5%; /* 右上角設為圓形 */
+    border-top-left-radius: 5px; /* 左上角設為圓形 */
+    border-top-right-radius: 5px; /* 右上角設為圓形 */
     position: relative; /* 添加相對定位 */
     overflow: hidden; /* 隱藏超出部分 */
 }
@@ -175,8 +180,8 @@ h1{
     padding: 10px;
     margin: 3px;
     border-bottom: 4px solid #d405d4;
-    border-top-left-radius: 5%; /* 左上角設為圓形 */
-    border-top-right-radius: 5%; /* 右上角設為圓形 */
+    border-top-left-radius: 5px; /* 左上角設為圓形 */
+    border-top-right-radius: 5px; /* 右上角設為圓形 */
     position: relative; /* 添加相對定位 */
     overflow: hidden; /* 隱藏超出部分 */
 }
@@ -208,8 +213,8 @@ h1{
     padding: 10px;
     margin: 3px;
     border-bottom: 4px solid #f31818;
-    border-top-left-radius: 5%; /* 左上角設為圓形 */
-    border-top-right-radius: 5%; /* 右上角設為圓形 */
+    border-top-left-radius: 5px; /* 左上角設為圓形 */
+    border-top-right-radius: 5px; /* 右上角設為圓形 */
     position: relative; /* 添加相對定位 */
     overflow: hidden; /* 隱藏超出部分 */
 }
@@ -241,8 +246,8 @@ h1{
     padding: 10px;
     margin: 3px;
     border-bottom: 4px solid chocolate;
-    border-top-left-radius: 5%; /* 左上角設為圓形 */
-    border-top-right-radius: 5%; /* 右上角設為圓形 */
+    border-top-left-radius: 5px; /* 左上角設為圓形 */
+    border-top-right-radius: 5px; /* 右上角設為圓形 */
     position: relative; /* 添加相對定位 */
     overflow: hidden; /* 隱藏超出部分 */
 }
@@ -274,8 +279,8 @@ h1{
     padding: 10px;
     margin: 3px;
     border-bottom: 4px solid #3f51b5;
-    border-top-left-radius: 5%; /* 左上角設為圓形 */
-    border-top-right-radius: 5%; /* 右上角設為圓形 */
+    border-top-left-radius: 5px; /* 左上角設為圓形 */
+    border-top-right-radius: 5px; /* 右上角設為圓形 */
     position: relative; /* 添加相對定位 */
     overflow: hidden; /* 隱藏超出部分 */
 }
@@ -307,8 +312,8 @@ h1{
     padding: 10px;
     margin: 3px;
     border-bottom: 4px solid #e9425e;
-    border-top-left-radius: 5%; /* 左上角設為圓形 */
-    border-top-right-radius: 5%; /* 右上角設為圓形 */
+    border-top-left-radius: 5px; /* 左上角設為圓形 */
+    border-top-right-radius: 5px; /* 右上角設為圓形 */
     position: relative; /* 添加相對定位 */
     overflow: hidden; /* 隱藏超出部分 */
 }

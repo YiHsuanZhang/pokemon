@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>updown</title>
+    <title>寶可夢圖鑑</title>
     <link rel="stylesheet" href="css/updown.css">
     <link rel="stylesheet" href="css/topnine.css">
 </head>
@@ -54,7 +54,7 @@
                             </li>
                             
                             <li class="global_right_news">
-                                <a class="right_news" href="top_eight.html">熱門情報</a>
+                                <a class="right_news" href="top_eight.html">聯絡我們</a>
                             </li>
         
                             <li class="global_right_book">
@@ -76,8 +76,9 @@
     <div class="bgc_body" style="background-color: #1b252f; padding: 0;">
         <div class="body_container">
             <div class="container_content">
+                <div class="background_image"></div>
                 <div class="pokemon-list_header">
-                    <a href="#">
+                    <a href="#" class="list-header-sp">
                         <span>寶可夢圖鑑</span>
                     </a>
                 </div>
@@ -86,31 +87,109 @@
                     <div class="pokemon_img">
                         <img src="img/TOP09/pokemon_list_bg.png" alt="" class="pokemon_img_block">
 
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                        <div class="images_ch main-image_center">
+                            <a href="">
+                                <img src="img/TOP09/images/cc1.png" alt="">
+                            </a>
+                        </div>
+                        
+                        <div class="images_ch small-images pokemon_img-01 fix_04">
+                            <a href="">
+                                <img src="img/TOP09/images/cc2.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="images_ch small-images pokemon_img-02 fix_03">
+                            <a href="">
+                                <img src="img/TOP09/images/cc3.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="images_ch small-images pokemon_img-03 fix_03">
+                            <a href="">
+                                <img src="img/TOP09/images/cc4.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="images_ch small-images pokemon_img-04 fix_02">
+                            <a href="">
+                                <img src="img/TOP09/images/cc5.png" alt="">
+                            </a>
+                        </div>
+                        
+                        <div class="images_ch small-images pokemon_img-05 fix_01">
+                            <a href="">
+                                <img src="img/TOP09/images/cc6.png" alt="">
+                            </a>
+                        </div>
+                        
+                        <div class="images_ch small-images pokemon_img-06 fix_01">
+                            <a href="">
+                                <img src="img/TOP09/images/cc7.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="images_ch small-images pokemon_img-07 fix_04">
+                            <a href="">
+                                <img src="img/TOP09/images/cc8.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="images_ch small-images pokemon_img-08 fix_03">
+                            <a href="">
+                                <img src="img/TOP09/images/cc9.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="images_ch small-images pokemon_img-09 fix_03">
+                            <a href="">
+                                <img src="img/TOP09/images/cc10.png" alt="">
+                            </a>
+                        </div>
+                        
+                        <div class="images_ch small-images pokemon_img-10 fix_02">
+                            <a href="">
+                                <img src="img/TOP09/images/cc11.png" alt="">
+                            </a>
+                        </div>
+                        
+                        <div class="images_ch small-images pokemon_img-11 fix_02">
+                            <a href="">
+                                <img src="img/TOP09/images/cc12.png" alt="">
+                            </a>
+                        </div>
+                        
+                        <div class="images_ch small-images pokemon_img-12 fix_01">
+                            <a href="">
+                                <img src="img/TOP09/images/cc13.png" alt="">
+                            </a>
+                        </div>
+                        
                     </div>
-                    <form action="">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <input type="submit">
+                    <form action="" class="pokemon-search">
+                        <div class="pokemon-search_title">
+                            <span id="pokemon_search_title">使用名稱或圖鑑編號搜索</span>
+                        </div>
+                        <div class="pokemon-search_form">
+                            <div class="pokemon_form_inpu">
+                                <input type="text" name="" id="search_intext" class="search_inpu">
+                            </div>
+                            <div class="pokemon-search_button">
+                                <img src="img/TOP09/icon_magnifying_glass.png" alt="">
+                            </div>
+                        </div>
+                        <div class="pokemon-search_surp">
+                            <a href="">
+                                <span>隨機顯示</span>
+                            </a>
+                        </div>
+                        <input type="submit" class="inpu_sub">
                     </form>
                 </div>
 
                 <div class="pokemon_list_banner">
-                    <a href="#">
-                        <img src="" alt="">
+                    <a href="#" >
+                        <img src="img/TOP09/bnr_quiz.png" alt="" class="banner_box">
                     </a>
                 </div>
 
@@ -152,6 +231,7 @@
             </div>
         </div>
     </div>
+
 
     <footer>
         <!-- 底部上層連結區塊 -->
@@ -241,7 +321,8 @@
         </div>
 
     </footer>
-
+    <script src="js/search.js"></script>
+    <script src="js/fix.pic.js"></script>
 
 </body>
 </html>

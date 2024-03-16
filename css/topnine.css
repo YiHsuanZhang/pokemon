@@ -1,48 +1,94 @@
-*img{
+img{
   width: 100%;
-  height: auto;
 }
 
-.bgc_body{
+.bgc_body {
   background-color: #1b252f;
   padding: 0;
+  box-sizing: border-box;
 }
-.body_container{
+
+.body_container {
   background-image: url(../img/TOP09/list_top_bg.jpg);
   position: relative;
+  z-index: 0;
   min-width: 950px;
   max-width: 1400px;
   margin: 0 auto;
   width: 100%;
   overflow: hidden;
+  background-color: #0a141e;
   background-size: 100% auto;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  /*讓圖像只顯示一個*/
 }
 
-.container_content{
+@media (min-width: 760px) {
+  .container_content {
+    width: 100%;
+    background-size: 100% auto;
+  }
+}
+
+.container_content {
+  position: relative;
+  /*讓圖像只顯示一個*/
+}
+
+.background_image {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 15%;
   background-image: url(../img/TOP09/pokedex_bg.png);
   background-size: 100% auto;
-  background-repeat: no-repeat; /*讓圖像只顯示一個*/
-  position: relative;
+  background-repeat: no-repeat;
+  /*讓圖像只顯示一個*/
   z-index: 1;
 }
-.pokemon-list_header{
+
+.pokemon-list_header {
   width: 100%;
+}
+
+.list-header-sp {
+  position: absolute;
+  max-width: 100%;
+  margin: 0 43%;
+  padding: 0 2%;
+  top: 6%;
+  z-index: 2;
+  font-size: 25px;
+  color: black;
+  text-align: center;
+  flex-wrap: nowrap;
 }
 
 /* 中間部分 s */
-.pokemon_list_main{
+.pokemon_list_main {
   position: relative;
   width: 100%;
+  margin: 0 auto;
+  height: 600px;
 }
-.pokemon_list_main, .pokemon_img{
+
+.pokemon_img {
   width: 100%;
+  height: 540px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 /* 定義動畫 */
 @keyframes spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -50,18 +96,314 @@
 
 /* 應用到圖片 */
 .pokemon_img_block {
-  animation: spin 2.5s linear infinite; /* 2.5秒鐘轉一圈，線形變化，無限循環 */
+  animation: spin 2.5s linear infinite;
+  /* 2.5秒鐘轉一圈，線形變化，無限循環 */
   width: 100%;
   display: block;
   position: relative;
-  top: -85px;
+  top: 0px;
 }
-.pokemon_img_block img{
-  max-width: 100%; /*讓圖片寬度不超過父元素寬度*/
-  height: auto; /*讓圖片高度根據寬度等比例縮放*/
+
+.pokemon_img_block img {
+  max-width: 100%;
+  /*讓圖片寬度不超過父元素寬度*/
+  height: auto;
 }
 /* 定義動畫 e */
+.main-image_center {
+  position: absolute;
+  width: 20%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main-image_center img{
+  background-image: url(../img/TOP09/random_center_bg.png);
+  width: 100%;
+  background-size: 100% auto;
+  padding: 8%;
+  position: relative;
+  left: -20px;
+  opacity: 0; /* 開始時不可見 */
+  animation-name: fix_pokemon;
+  animation-duration: 1.5s;
+  animation-delay: 0.5s; /* 可選的延遲時間 */
+  animation-fill-mode: both;
+}
 
-.pokemon_list_sub{
+@keyframes fix_pokemon {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.small-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.small-images img{
+  background-image: url(../img/TOP09/random_bg.png);
+  width: 100%;
+  background-size: 100% auto;
+  padding: 5%;
+  
+}
+.fix_01 img{
+  opacity: 0; /* 開始時不可見 */
+  animation-name: fix_pokemon;
+  animation-duration: 1.5s;
+  animation-delay: 0.7s; /* 可選的延遲時間 */
+  animation-fill-mode: both;
+}
+.fix_02 img{
+  opacity: 0; /* 開始時不可見 */
+  animation-name: fix_pokemon;
+  animation-duration: 1.5s;
+  animation-delay: 0.9s; /* 可選的延遲時間 */
+  animation-fill-mode: both;
+}
+.fix_03 img{
+  opacity: 0; /* 開始時不可見 */
+  animation-name: fix_pokemon;
+  animation-duration: 1.5s;
+  animation-delay: 1.1s; /* 可選的延遲時間 */
+  animation-fill-mode: both;
+}
+.fix_04 img{
+  opacity: 0; /* 開始時不可見 */
+  animation-name: fix_pokemon;
+  animation-duration: 1.5s;
+  animation-delay: 1.4s; /* 可選的延遲時間 */
+  animation-fill-mode: both;
+}
+.pokemon_img-01{
+  position: absolute;
+  width: 9%;
+  top: 50%;
+  left: 9%;
+  transform: translate(-50%, -50%);
+}
+
+.pokemon_img-02{
+  position: absolute;
+  width: 9%;
+  top: 36%;
+  left: 17%;
+  transform: translate(-50%, -50%);
+}
+
+.pokemon_img-03{
+  position: absolute;
+  width: 9%;
+  top: 64%;
+  left: 17%;
+  transform: translate(-50%, -50%);
+}
+
+.pokemon_img-04{
+  position: absolute;
+  width: 9%;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+
+.pokemon_img-05{
+  position: absolute;
+  width: 9%;
+  top: 36%;
+  left: 33%;
+  transform: translate(-50%, -50%);
+}
+
+.pokemon_img-06{
+  position: absolute;
+  width: 9%;
+  top: 64%;
+  left: 34%;
+  transform: translate(-50%, -50%);
+}
+
+.pokemon_img-07{
+  position: absolute;
+  width: 9%;
+  top: 50%;
+  right: 1%;
+  transform: translate(-50%, -50%);
+}
+
+.pokemon_img-08{
+  position: absolute;
+  width: 9%;
+  top: 36%;
+  right: 9%;
+  transform: translate(-50%, -50%);
+}
+
+.pokemon_img-09{
+  position: absolute;
+  width: 9%;
+  top: 64%;
+  right: 9%;
+  transform: translate(-50%, -50%);
+}
+
+.pokemon_img-10{
+  position: absolute;
+  width: 9%;
+  top: 50%;
+  right: 17%;
+  transform: translate(-50%, -50%);
+}
+
+.pokemon_img-11{
+  position: absolute;
+  width: 9%;
+  top: 36%;
+  right: 25%;
+  transform: translate(-50%, -50%);
+}
+
+.pokemon_img-12{
+  position: absolute;
+  width: 9%;
+  top: 64%;
+  right: 25%;
+  transform: translate(-50%, -50%);
+}
+
+
+.small-images a {
+  margin: 0 5px; /* 根據需要調整小圖之間的間距 */
+}
+
+.small-images img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 3 s */
+.pokemon-search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: -40px;
+}
+
+.pokemon-search_title {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  margin-left: 10%;
+  margin-bottom: 10px;
+  color: #b3eafe;
+  text-shadow: 0 0 5px #b3eafe, 0 0 5px #b3eafe;
+  font-size: 22px;
+}
+
+.pokemon-search_form {
+  display: flex;
+  position: absolute;
+  width: 50%;
+  left: 10%;
+  max-width: 500px;
+}
+.pokemon_form_inpu{
+  content: "";
+  height: 0;
+  display: contents;
+  padding-top: 7.114%;
+}
+.search_inpu{
+  width: 100%;
+  position: absolute;
+  left: 62%;
+  transform: translate(-50%, -23%);
+  border: 0;
+  padding: 18px 70px;
+  margin: 8px;
+  border-radius: 50px 0 0 50px;
+}
+
+.pokemon-search_button{
+  width: 10%;
+  position: absolute;
+  right: -48%;
+  padding: 5.2px 12px;
+  transform: translate(-38%, -6%);
+  background-color: #b4ebff;
+  border-radius: 0 50px 50px 0;
+  box-shadow: 0 0 0px 1px #fff;
+  cursor: pointer; /*滑鼠樣式*/
+}
+.pokemon-search_button img{
+  width: 70%;
+}
+.pokemon-search_surp {
+  margin-top: 10px;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.pokemon-search_surp a {
+  width: 28.57142857%;
+  right: 8.5%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  top: -15px;
+  background: #ffdc00 url(../img/TOP09/icon_surprise.png) 90% 30% no-repeat;
+  background-size: auto 70%;
+  border-radius: 50px;
+  border: 0;
+  color: #fff;
+  font-size: 25px;
+}
+
+.inpu_sub {
+  display: none;
+  /* 隱藏默認提交按鈕 */
+}
+
+
+
+/* 3 e */
+.pokemon_list_banner {
+  width: 100%;
+  margin: auto;
+  position: relative;
+  padding: 0 3.64285714%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.pokemon_list_banner img {
+  width: 100%;
+  max-width: 100%;
+  padding: 1px 0;
+  margin: 0 0 15px 0;
+  display: block;
+}
+
+.banner_box {
+  box-shadow: 0 0 8px #b4ebff, inset 0 0 15px #b4ebff;
+  border-radius: 10px;
+}
+
+
+/* 第四部份 S */
+
+.pokemon_list_sub {
   background-image: url(../img/TOP09/list_bg.jpg);
 }
