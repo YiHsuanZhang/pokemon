@@ -58,7 +58,7 @@ img{
   max-width: 100%;
   margin: 0 43%;
   padding: 0 2%;
-  top: 6%;
+  top: 3.7%;
   z-index: 2;
   font-size: 25px;
   color: black;
@@ -405,5 +405,199 @@ img{
 /* 第四部份 S */
 
 .pokemon_list_sub {
-  background-image: url(../img/TOP09/list_bg.jpg);
+  background-image: url(../img/TOP09/advance_search_open_bg.png);
+  background-size: 100% auto;
+  position: relative;
+  width: 100%;
+  margin: auto;
+}
+.pokemon_search{
+  width: 80%;
+  margin: auto;
+}
+.pokemon-more-search_open{
+  padding-top: 3%;
+}
+
+.search_open--body--inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.inner-container {
+  display: flex;
+  flex-direction: row; /* 內部水平排列 */
+}
+
+.inner-left,
+.inner-right {
+  flex: 1;
+}
+
+.inner-left-title{
+  color: #b4ebff;
+  border-bottom: 1px solid #b4ebff;
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
+  font-size: 25px;
+}
+
+/* 進階左邊 */
+
+.inner-left{
+  float: left;
+  width: 50%;
+  margin: 0 5%;
+}
+
+.inner-left-types {
+  display: grid;
+  grid-template-columns: repeat(3, 3fr); /* 3 列 */
+  grid-gap: 10px; /* 選擇間距 */
+  text-align: center;
+}
+
+.inner-left-types input[type="checkbox"] {
+  display: none; /* 隱藏每個選項旁邊的選擇框框 */
+}
+
+.color_box{
+  border-radius: 50px;
+  margin: 4%;
+  padding: 1px;
+}
+
+/* 進階右邊 */
+.inner-right{
+  width: 50%;
+  margin: 0 8% 3% 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.search__block{
+  width: 100%;
+  border: 2px solid #466e9b;
+  border-radius: 1em;
+  padding: 2em;
+  margin-bottom: 1em;
+}
+
+.search_right_title{
+  color: #b4ebff;
+  font-size: 25px;
+  padding-bottom: 2px;
+}
+.search_right_title{
+  color: #b4ebff;
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+.select-wrapper{
+  background: #fff url(../img/TOP09/icon_arrow.png) 95% 50% no-repeat;
+  background-size: auto 30%;
+  border: 0;
+  cursor: pointer; 
+}
+#ch_select{
+  width: 100%;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 2%;
+}
+
+.select-wrapper.rotate {
+  background-image: url(../img/TOP09/icon_arrow_upside_down.png);
+}
+
+.inner-bottom {
+  margin-top: 10px; 
+}
+
+.sliders_control {
+  position: relative;
+  min-height: 50px;
+  background-image: url(../img/TOP09/search_number_connect_bg.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  appearance: none;
+  padding-top: 5px;
+  margin: 0px 25px;
+}
+
+.form_control {
+  position: relative;
+  display: flex;
+  font-size: 24px;
+  color: #b4ebff;
+  margin-bottom: 30px;
+  align-items: center;
+}
+.form_control_container{
+  margin: 10px;
+}
+.form_control_container, .form_control span{
+  color: #fff;
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  pointer-events: all;
+  width: 24px;
+  height: 24px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px #C6C6C6;
+  cursor: pointer;
+}
+
+input[type=range]::-moz-range-thumb {
+  -webkit-appearance: none;
+  pointer-events: all;
+  width: 24px;
+  height: 24px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px #C6C6C6;
+  cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-thumb:hover {
+  background: #f7f7f7;
+}
+
+input[type=range]::-webkit-slider-thumb:active {
+  box-shadow: inset 0 0 3px #387bbe, 0 0 9px #387bbe;
+  -webkit-box-shadow: inset 0 0 3px #387bbe, 0 0 9px #387bbe;
+}
+
+input[type="number"] {
+  color: #8a8383;
+  width: 50px;
+  height: 30px;
+  font-size: 20px;
+  border: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  opacity: 1;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  background-color: transparent;
+  pointer-events: none;
+}
+
+#fromSlider {
+  height: 0;
+  z-index: 1;
+  margin: 0 -5px;
 }

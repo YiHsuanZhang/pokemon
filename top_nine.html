@@ -195,7 +195,159 @@
 
                 <div class="pokemon_list_sub">
                     <div class="pokemon_search">
+                        <form action="">
+                            <div id="search-close" class="pokemon-more-search_close">
+                                <span>進階搜尋</span>
+                            </div>
 
+                            <div id="search-open" class="pokemon-more-search_open">
+                                <div class="pokemon-more-search_open--header"></div>
+                                <div class="pokemon-more-search_open--body">
+                                    <div class="search_open--body--inner">
+                                        <div class="inner-container">
+                                            <div class="inner-left">
+                                                <div class="inner-left-title">屬性</div>
+                                                <div class="inner-left-types">
+                                                    <div class="color_box" style="border: 1px solid #dcdcdc; color: #dcdcdc;">
+                                                        <input type="checkbox" id="poke_type_normal">
+                                                        <label for="poke_type_normal"><span>一般</span></label>
+                                                    </div>
+
+                                                    <div class="color_box" style="border: 1px solid #ff6900; color: #ff6900;">
+                                                        <input type="checkbox" id="poke_type_fire">
+                                                        <label for="poke_type_fire"><span>火</span></label>
+                                                    </div>
+
+                                                    <div class="color_box" style="border: 1px solid #14B9ff; color: #14B9ff;">
+                                                        <input type="checkbox" id="poke_type_water">
+                                                        <label for="poke_type_water"><span>水</span></label>
+                                                    </div>
+
+                                                    <div class="color_box" style="border: 1px solid #B4f000; color: #B4f000;">
+                                                        <input type="checkbox" id="poke_type_grass">
+                                                        <label for="poke_type_grass"><span>草</span></label>
+                                                    </div>
+
+                                                    <div class="color_box" style="border: 1px solid #FFE100; color: #FFE100;">
+                                                        <input type="checkbox" id="poke_type_electric">
+                                                        <label for="poke_type_electric"><span>電</span></label>
+                                                    </div>
+
+                                                    <div class="color_box" style="border: 1px solid #14f5ff; color: #14f5ff;">
+                                                        <input type="checkbox" id="poke_type_ice">
+                                                        <label for="poke_type_ice"><span>冰</span></label>
+                                                    </div>
+
+                                                    <div class="color_box" style="border: 1px solid #DC6900; color: #DC6900;">
+                                                        <input type="checkbox" id="poke_type_fighting">
+                                                        <label for="poke_type_fighting"><span>格鬥</span></label>
+                                                    </div>
+
+                                                    <div class="color_box" style="border: 1px solid #D28cd2; color: #D28cd2;">
+                                                        <input type="checkbox" id="poke_type_poison">
+                                                        <label for="poke_type_poison"><span>毒</span></label>
+                                                    </div>
+
+                                                    <div class="color_box" style="border: 1px solid #fac85a; color: #fac85a;">
+                                                        <input type="checkbox" id="poke_type_ground">
+                                                        <label for="poke_type_ground"><span>地面</span></label>
+                                                    </div>
+
+                                                    <div class="color_box" style="border: 1px solid #78dcff; color: #78dcff;">
+                                                        <input type="checkbox" id="poke_type_flying">
+                                                        <label for="poke_type_flying"><span>飛行</span></label>
+                                                    </div>
+
+                                                    <div class="color_box" style="border: 1px solid #f08cdc; color: #f08cdc;">
+                                                        <input type="checkbox" id="poke_type_psychic">
+                                                        <label for="poke_type_psychic"><span>超能力</span></label>
+                                                    </div>
+
+                                                    <div class="color_box" style="border: 1px solid #46c846; color: #46c846;">
+                                                        <input type="checkbox" id="poke_type_bug">
+                                                        <label for="poke_type_bug"><span>蟲</span></label>
+                                                    </div>
+
+                                                    <div class="color_box" style="border: 1px solid #b48064; color: #b48064;">
+                                                        <input type="checkbox" id="poke_type_rock">
+                                                        <label for="poke_type_rock"><span>岩石</span></label>
+                                                    </div>
+
+                                                    <div class="color_box" style="border: 1px solid #a08cff; color: #a08cff;">
+                                                        <input type="checkbox" id="poke_type_ghost">
+                                                        <label for="poke_type_ghost"><span>幽靈</span></label>
+                                                    </div>
+
+                                                    <div class="color_box" style="border: 1px solid #5078dc; color: #5078dc;">
+                                                        <input type="checkbox" id="poke_type_dragon">
+                                                        <label for="poke_type_dragon"><span>龍</span></label>
+                                                    </div>
+
+                                                    <div class="color_box" style="border: 1px solid #787878; color: #787878;">
+                                                        <input type="checkbox" id="poke_type_dark">
+                                                        <label for="poke_type_dark"><span>惡</span></label>
+                                                    </div>
+
+                                                    <div class="color_box" style="border: 1px solid #aac8f0; color: #aac8f0;">
+                                                        <input type="checkbox" id="poke_type_steel">
+                                                        <label for="poke_type_steel"><span>鋼</span></label>
+                                                    </div>
+
+                                                    <div class="color_box" style="border: 1px solid #ffafdc; color: #ffafdc;">
+                                                        <input type="checkbox" id="poke_type_fairy">
+                                                        <label for="poke_type_fairy">妖精</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inner-right">
+                                                <div class="search__block">
+                                                    <div class="search_right_title">特性</div>
+                                                    <div class="select-wrapper" onclick="rotateBackground()">
+                                                        <select name="" id="ch_select">
+                                                            <option value="">所有</option>
+                                                            <option :checked="" value="adaptability">適應力</option>
+                                                            <option :checked="" value="aerilate">飛行皮膚</option>
+                                                            <option :checked="" value="aftermath">引爆</option>
+                                                            <option :checked="" value="anger point">憤怒穴位</option>
+                                                            <option :checked="" value="anticipation">危險預知</option>
+                                                            <option :checked="" value="arena trap">沙穴</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="search__block">
+                                                    <div class="form_control">
+                                                        <!-- 表单控制容器 -->
+                                                        <div class="form_control_container">
+                                                            <!-- 文本 -->
+                                                            <span style="color: #b4ebff;; margin-right: 20px;">圖鑑編號</span>
+                                                            <!-- 数字输入框 -->
+                                                            <span>
+                                                                <span id="fromInputText">1</span>
+                                                                -
+                                                                <span id="toInputText">1025</span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 滑动条控制 -->
+                                                    <div class="sliders_control">
+                                                        <!-- 起始滑动条 -->
+                                                        <input id="fromSlider" type="range" value="1" min="1" max="1025">
+                                                        <!-- 结束滑动条 -->
+                                                        <input id="toSlider" type="range" value="1025" min="1" max="1025">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="inner-bottom"></div>
+                                    </div>
+                                    <span>隱藏進階搜尋</span>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="poke_more_search">
+
+                        </div>
                     </div>
 
                     <div class="pokemon-list">
@@ -220,12 +372,18 @@
                         <div></div>
                     </div>
                     
-                    <div class="pokemon-list-empty">
-
-                    </div>
 
                     <div class="pokemon-sns">
-
+                        <div class="poke_sns">
+                            <ul>
+                                <li>
+                                    <a href=""></a>
+                                </li>
+                                <li>
+                                    <a href=""></a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -321,7 +479,7 @@
         </div>
 
     </footer>
-    <script src="js/search.js"></script>
+    <script src="js/more_search.js"></script>
     <script src="js/fix.pic.js"></script>
 
 </body>
