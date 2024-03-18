@@ -1,4 +1,4 @@
-img{
+img {
   width: 100%;
 }
 
@@ -41,7 +41,7 @@ img{
   top: 0;
   left: 0;
   width: 100%;
-  height: 8%;
+  height: 15%;
   background-image: url(../img/TOP09/pokedex_bg.png);
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -58,7 +58,7 @@ img{
   max-width: 100%;
   margin: 0 43%;
   padding: 0 2%;
-  top: 3.7%;
+  top: 4%;
   z-index: 2;
   font-size: 25px;
   color: black;
@@ -109,6 +109,7 @@ img{
   /*讓圖片寬度不超過父元素寬度*/
   height: auto;
 }
+
 /* 定義動畫 e */
 .main-image_center {
   position: absolute;
@@ -117,17 +118,20 @@ img{
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.main-image_center img{
+
+.main-image_center img {
   background-image: url(../img/TOP09/random_center_bg.png);
   width: 100%;
   background-size: 100% auto;
   padding: 8%;
   position: relative;
   left: -20px;
-  opacity: 0; /* 開始時不可見 */
+  opacity: 0;
+  /* 開始時不可見 */
   animation-name: fix_pokemon;
   animation-duration: 1.5s;
-  animation-delay: 0.5s; /* 可選的延遲時間 */
+  animation-delay: 0.5s;
+  /* 可選的延遲時間 */
   animation-fill-mode: both;
 }
 
@@ -135,6 +139,7 @@ img{
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -147,42 +152,55 @@ img{
   height: 100%;
 }
 
-.small-images img{
+.small-images img {
   background-image: url(../img/TOP09/random_bg.png);
   width: 100%;
   background-size: 100% auto;
   padding: 5%;
-  
+
 }
-.fix_01 img{
-  opacity: 0; /* 開始時不可見 */
+
+.fix_01 img {
+  opacity: 0;
+  /* 開始時不可見 */
   animation-name: fix_pokemon;
   animation-duration: 1.5s;
-  animation-delay: 0.7s; /* 可選的延遲時間 */
+  animation-delay: 0.7s;
+  /* 可選的延遲時間 */
   animation-fill-mode: both;
 }
-.fix_02 img{
-  opacity: 0; /* 開始時不可見 */
+
+.fix_02 img {
+  opacity: 0;
+  /* 開始時不可見 */
   animation-name: fix_pokemon;
   animation-duration: 1.5s;
-  animation-delay: 0.9s; /* 可選的延遲時間 */
+  animation-delay: 0.9s;
+  /* 可選的延遲時間 */
   animation-fill-mode: both;
 }
-.fix_03 img{
-  opacity: 0; /* 開始時不可見 */
+
+.fix_03 img {
+  opacity: 0;
+  /* 開始時不可見 */
   animation-name: fix_pokemon;
   animation-duration: 1.5s;
-  animation-delay: 1.1s; /* 可選的延遲時間 */
+  animation-delay: 1.1s;
+  /* 可選的延遲時間 */
   animation-fill-mode: both;
 }
-.fix_04 img{
-  opacity: 0; /* 開始時不可見 */
+
+.fix_04 img {
+  opacity: 0;
+  /* 開始時不可見 */
   animation-name: fix_pokemon;
   animation-duration: 1.5s;
-  animation-delay: 1.4s; /* 可選的延遲時間 */
+  animation-delay: 1.4s;
+  /* 可選的延遲時間 */
   animation-fill-mode: both;
 }
-.pokemon_img-01{
+
+.pokemon_img-01 {
   position: absolute;
   width: 9%;
   top: 50%;
@@ -190,7 +208,7 @@ img{
   transform: translate(-50%, -50%);
 }
 
-.pokemon_img-02{
+.pokemon_img-02 {
   position: absolute;
   width: 9%;
   top: 36%;
@@ -198,7 +216,7 @@ img{
   transform: translate(-50%, -50%);
 }
 
-.pokemon_img-03{
+.pokemon_img-03 {
   position: absolute;
   width: 9%;
   top: 64%;
@@ -206,7 +224,7 @@ img{
   transform: translate(-50%, -50%);
 }
 
-.pokemon_img-04{
+.pokemon_img-04 {
   position: absolute;
   width: 9%;
   top: 50%;
@@ -214,7 +232,7 @@ img{
   transform: translate(-50%, -50%);
 }
 
-.pokemon_img-05{
+.pokemon_img-05 {
   position: absolute;
   width: 9%;
   top: 36%;
@@ -222,7 +240,7 @@ img{
   transform: translate(-50%, -50%);
 }
 
-.pokemon_img-06{
+.pokemon_img-06 {
   position: absolute;
   width: 9%;
   top: 64%;
@@ -230,7 +248,7 @@ img{
   transform: translate(-50%, -50%);
 }
 
-.pokemon_img-07{
+.pokemon_img-07 {
   position: absolute;
   width: 9%;
   top: 50%;
@@ -238,7 +256,7 @@ img{
   transform: translate(-50%, -50%);
 }
 
-.pokemon_img-08{
+.pokemon_img-08 {
   position: absolute;
   width: 9%;
   top: 36%;
@@ -246,7 +264,7 @@ img{
   transform: translate(-50%, -50%);
 }
 
-.pokemon_img-09{
+.pokemon_img-09 {
   position: absolute;
   width: 9%;
   top: 64%;
@@ -254,7 +272,7 @@ img{
   transform: translate(-50%, -50%);
 }
 
-.pokemon_img-10{
+.pokemon_img-10 {
   position: absolute;
   width: 9%;
   top: 50%;
@@ -262,7 +280,7 @@ img{
   transform: translate(-50%, -50%);
 }
 
-.pokemon_img-11{
+.pokemon_img-11 {
   position: absolute;
   width: 9%;
   top: 36%;
@@ -270,7 +288,7 @@ img{
   transform: translate(-50%, -50%);
 }
 
-.pokemon_img-12{
+.pokemon_img-12 {
   position: absolute;
   width: 9%;
   top: 64%;
@@ -280,7 +298,8 @@ img{
 
 
 .small-images a {
-  margin: 0 5px; /* 根據需要調整小圖之間的間距 */
+  margin: 0 5px;
+  /* 根據需要調整小圖之間的間距 */
 }
 
 .small-images img {
@@ -316,13 +335,15 @@ img{
   left: 10%;
   max-width: 500px;
 }
-.pokemon_form_inpu{
+
+.pokemon_form_inpu {
   content: "";
   height: 0;
   display: contents;
   padding-top: 7.114%;
 }
-.search_inpu{
+
+.search_inpu {
   width: 100%;
   position: absolute;
   left: 62%;
@@ -333,7 +354,7 @@ img{
   border-radius: 50px 0 0 50px;
 }
 
-.pokemon-search_button{
+.pokemon-search_button {
   width: 10%;
   position: absolute;
   right: -48%;
@@ -342,11 +363,14 @@ img{
   background-color: #b4ebff;
   border-radius: 0 50px 50px 0;
   box-shadow: 0 0 0px 1px #fff;
-  cursor: pointer; /*滑鼠樣式*/
+  cursor: pointer;
+  /*滑鼠樣式*/
 }
-.pokemon-search_button img{
+
+.pokemon-search_button img {
   width: 70%;
 }
+
 .pokemon-search_surp {
   margin-top: 10px;
   position: absolute;
@@ -354,6 +378,7 @@ img{
   display: flex;
   justify-content: flex-end;
 }
+
 .pokemon-search_surp a {
   width: 28.57142857%;
   right: 8.5%;
@@ -376,9 +401,8 @@ img{
   /* 隱藏默認提交按鈕 */
 }
 
-
-
 /* 3 e */
+
 .pokemon_list_banner {
   width: 100%;
   margin: auto;
@@ -401,21 +425,22 @@ img{
   border-radius: 10px;
 }
 
-
 /* 第四部份 S */
 
-.pokemon_list_sub {
-  background-image: url(../img/TOP09/advance_search_open_bg.png);
-  background-size: 100% auto;
+.pokemon_list_sub{
+  background-position: center;
   position: relative;
   width: 100%;
   margin: auto;
 }
-.pokemon_search{
+
+.pokemon_search {
   width: 80%;
   margin: auto;
+  position: relative;
 }
-.pokemon-more-search_open{
+
+.pokemon-more-search_open {
   padding-top: 3%;
 }
 
@@ -426,7 +451,8 @@ img{
 
 .inner-container {
   display: flex;
-  flex-direction: row; /* 內部水平排列 */
+  flex-direction: row;
+  /* 內部水平排列 */
 }
 
 .inner-left,
@@ -434,7 +460,7 @@ img{
   flex: 1;
 }
 
-.inner-left-title{
+.inner-left-title {
   color: #b4ebff;
   border-bottom: 1px solid #b4ebff;
   padding-bottom: 0.5em;
@@ -444,7 +470,7 @@ img{
 
 /* 進階左邊 */
 
-.inner-left{
+.inner-left {
   float: left;
   width: 50%;
   margin: 0 5%;
@@ -452,23 +478,26 @@ img{
 
 .inner-left-types {
   display: grid;
-  grid-template-columns: repeat(3, 3fr); /* 3 列 */
-  grid-gap: 10px; /* 選擇間距 */
+  grid-template-columns: repeat(3, 3fr);
+  /* 3 列 */
+  grid-gap: 10px;
+  /* 選擇間距 */
   text-align: center;
 }
 
 .inner-left-types input[type="checkbox"] {
-  display: none; /* 隱藏每個選項旁邊的選擇框框 */
+  display: none;
+  /* 隱藏每個選項旁邊的選擇框框 */
 }
 
-.color_box{
+.color_box {
   border-radius: 50px;
-  margin: 4%;
-  padding: 1px;
+  margin: 7%;
+  padding: 2px;
 }
 
 /* 進階右邊 */
-.inner-right{
+.inner-right {
   width: 50%;
   margin: 0 8% 3% 1%;
   display: flex;
@@ -476,45 +505,35 @@ img{
   justify-content: space-around;
 }
 
-.search__block{
+.search__block {
   width: 100%;
   border: 2px solid #466e9b;
   border-radius: 1em;
-  padding: 2em;
-  margin-bottom: 1em;
+  padding: 30px;
+  margin-bottom: 15px;
 }
 
-.search_right_title{
+.search_right_title {
   color: #b4ebff;
   font-size: 25px;
   padding-bottom: 2px;
+  margin: 0 0 10px 0;
 }
-.search_right_title{
-  color: #b4ebff;
-  font-size: 25px;
-  padding-bottom: 20px;
-}
-.select-wrapper{
+
+.select-wrapper {
   background: #fff url(../img/TOP09/icon_arrow.png) 95% 50% no-repeat;
   background-size: auto 30%;
   border: 0;
-  cursor: pointer; 
+  cursor: pointer;
 }
-#ch_select{
+
+#ch_select {
   width: 100%;
   appearance: none;
   background-color: transparent;
   border: none;
   outline: none;
   padding: 2%;
-}
-
-.select-wrapper.rotate {
-  background-image: url(../img/TOP09/icon_arrow_upside_down.png);
-}
-
-.inner-bottom {
-  margin-top: 10px; 
 }
 
 .sliders_control {
@@ -536,12 +555,16 @@ img{
   margin-bottom: 30px;
   align-items: center;
 }
-.form_control_container{
+
+.form_control_container {
   margin: 10px;
 }
-.form_control_container, .form_control span{
+
+.form_control_container,
+.form_control span {
   color: #fff;
 }
+
 input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
   pointer-events: all;
@@ -599,5 +622,148 @@ input[type="range"] {
 #fromSlider {
   height: 0;
   z-index: 1;
-  margin: 0 -5px;
+  margin: 3px -5px;
+}
+
+.inner-bottom {
+  width: 92%;
+  margin: 20px 0px 20px 4em;
+}
+
+.pokemon-more-search_close {
+  width: 100%;
+  height: 95px;
+  margin: auto;
+  background-image: url(../img/TOP09/advance_search_close_bg.png);
+  background-size: 1400px auto;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.pokemon-more-search_close span {
+  display: block;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  top: 20px;
+  text-shadow: 1px 1px 3px #fff, -1px -1px 3px #fff;
+  font-size: 18px;
+}
+
+.pokemon-more-search_close::after {
+  content: "";
+  height: 0;
+  display: block;
+}
+
+.inner-bottom-header {
+  color: #b4ebff;
+  border-bottom: 1px solid #b4ebff;
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
+  font-size: 25px;
+}
+
+.inner-bottom-area {
+  width: 100%;
+  margin: 0 10px 50px 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.inner-area-box {
+  color: #fff;
+  border: 1px solid white;
+  border-radius: 1em;
+  position: relative;
+  padding: 3px 1em;
+  margin: 1%;
+  outline: 0;
+  width: 8.7%;
+  text-align: center;
+}
+
+.inner-bottom-area input[type="checkbox"] {
+  display: none;
+}
+
+.color_box label,
+.inner-area-box label {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+
+.inner-bottom-buttons {
+  margin-bottom: 20px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.inner-bottom-buttons-left {
+  float: left;
+  width: 35%;
+  color: #b3eafe;
+  border-radius: 5em;
+  padding: 1% 0;
+  cursor: pointer;
+  text-shadow: 0 0 5px #b3eafe, 0 0 5px #b3eafe;
+  box-shadow: 0 0 2px 1px #b3eafe;
+}
+
+.inner-bottom-buttons-right {
+  float: right;
+  width: 60%;
+  background: #b3eafe url(../img/TOP09/icon_magnifying_glass.png) 96% 50% no-repeat;
+  padding: 1% 0;
+  box-shadow: 0 0 2px 1px #b3eafe;
+  border-radius: 50px;
+  background-size: auto 60%;
+  cursor: pointer;
+}
+
+.more_close {
+  width: 30%;
+  margin-left: 35%;
+  margin-top: 20px;
+  margin-bottom: 18px;
+  padding: 1% 0;
+  text-align: center;
+  cursor: pointer;
+  font-size: 18px;
+  color: #fff;
+  text-shadow: 1px 1px 3px #fff, -1px -1px 3px #fff;
+}
+
+.poke-more-number.moved {
+  bottom: -25px;
+  right: 0px;
+}
+
+.poke-more-number{
+  position: absolute;
+  bottom: 0;
+  width: 33.85714286%;
+  right: 0;
+  z-index: 9999;
+  text-align: center;
+}
+
+.poke-number-header{
+  cursor: pointer;
+  background-size: 100% auto;
+  height: 70px;
+  position: absolute;
+  width: 100%;
+  bottom: -20px;
+  right: 40px;
+  background-image: url(../img/TOP09/sort_close_bg.png);
+}
+
+.poke-number-body{
+  display: none;
+  background-image: url(../img/TOP09/sort_open_bg.png);
 }
