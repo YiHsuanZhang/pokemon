@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
+    const pokeMoreNumber = document.querySelector('.poke-number-header');
+    pokeMoreNumber.style.backgroundImage = "url('../img/TOP09/sort_close_bg.png')";
     const colorBoxes = document.querySelectorAll('.color_box');
 
     function countSelected() {
@@ -133,7 +135,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.querySelector('.pokemon_search').style.display = 'block';
 
         // 添加或刪除 .moved 類
-        document.querySelector('.poke-more-number').classList.toggle('moved');
+        document.querySelector('.poke-number-header').classList.toggle('moved');
     });
 
     // 添加點擊事件監聽器
@@ -144,7 +146,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.querySelector('.pokemon_search').style.display = 'none';
 
         // 添加或刪除 .moved 類
-        document.querySelector('.poke-more-number').classList.toggle('moved');
+        document.querySelector('.poke-number-header').classList.toggle('moved');
     });
 
     // 第二個事件監聽器不再需要，因為添加到了第一個事件監聽器中
@@ -165,4 +167,3 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
-

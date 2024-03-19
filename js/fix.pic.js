@@ -5,7 +5,7 @@ var images = [];
 var folderPath = '../img/TOP09/images/';
 
 // 圖片數量
-var numberOfImages = 55;
+var numberOfImages = 75;
 
 // 循環生成圖片路徑
 for (var i = 1; i <= numberOfImages; i++) {

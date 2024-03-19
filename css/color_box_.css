@@ -1,0 +1,111 @@
+.water_box{
+    border-color: #14b9ff;
+    background-color: #0094e5;
+    box-shadow: 0 0 0.25em 0.03em #0094e5;
+    border-radius: 1em;
+}
+
+.ground_box{
+    border-color: #fac85a;
+    background-color: #cca142;
+    box-shadow: 0 0 0.25em 0.03em #cca142;
+    border-radius: 1em;
+}
+
+.electric_box{
+    border-color: #ffe100;
+    background-color: #e4b700;
+    box-shadow: 0 0 0.25em 0.03em #e4b700;
+    border-radius: 1em;
+}
+
+.grass_box{
+    border-color: #b4f000;
+    background-color: #92bf19;
+    box-shadow: 0 0 0.25em 0.03em #92bf19;
+    border-radius: 1em;
+}
+
+.purple_box{
+    border-color: #d28cd2;
+    background-color: #be78be;
+    box-shadow: 0 0 0.25em 0.03em #be78be;
+    border-radius: 1em;
+}
+
+.fire_box{
+    border-color: #ff6900;
+    background-color: #ff3700;
+    box-shadow: 0 0 0.25em 0.03em #ff3700;
+    border-radius: 1em;
+}
+
+.pink_box{
+    border-color: #ffafdc;
+    background-color: #ff7eb8;
+    box-shadow: 0 0 0.25em 0.03em #ff7eb8;
+    border-radius: 1em;
+}
+
+.psychic_box{
+    border-color: #f08cdc;
+    background-color: #dc78c8;
+    box-shadow: 0 0 0.25em 0.03em #dc78c8;
+    border-radius: 1em;
+}
+
+.poison_box{
+    border-color: #d28cd2;
+    background-color: #be78be;
+    box-shadow: 0 0 0.25em 0.03em #be78be;
+    border-radius: 1em;
+}
+
+.gray_box{
+    border-color: #dcdcdc;
+    background-color: #a0a0a0;
+    box-shadow: 0 0 0.25em 0.03em #a0a0a0;
+    border-radius: 1em;
+}
+
+.steel_box{
+    border-color: #aac8f0;
+    background-color: #96b4dc;
+    box-shadow: 0 0 0.25em 0.03em #96b4dc;
+    border-radius: 1em;
+}
+
+.flying_box{
+    border-color: #78dcff;
+    background-color: #79bcd7;
+    box-shadow: 0 0 0.25em 0.03em #79bcd7;
+    border-radius: 1em;
+}
+
+.ghost_box{
+    border-color: #a08cff;
+    background-color: #8c78f0;
+    box-shadow: 0 0 0.25em 0.03em #8c78f0;
+    border-radius: 1em;
+}
+
+.fighting_box{
+    border-color: #dc6900;
+    background-color: #c85500;
+    box-shadow: 0 0 0.25em 0.03em #c85500;
+    border-radius: 1em;
+}
+
+.dragon_box{
+    border-color: #5078dc;
+    background-color: #3c64c8;
+    box-shadow: 0 0 0.25em 0.03em #3c64c8;
+    border-radius: 1em;
+}
+
+.rock_box{
+    border-color: #b48c64;
+    background-color: #a07850;
+    box-shadow: 0 0 0.25em 0.03em #a07850;
+    border-radius: 1em;
+}

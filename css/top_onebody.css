@@ -225,6 +225,17 @@
     transition: background-color 0.3s ease;
 }
 
+/*
+.toggle-header-btn.default-expanded::after {
+    content: "\25BE"; /* 下箭头符号 
+    transform: rotate(0deg); /* 初始状态朝下 
+}
+
+.toggle-header-btn.default-expanded.active::after {
+    transform: rotate(180deg); /* 展开时箭头朝上 
+}
+使用toggle.js時    */ 
+
 /* 添加下箭头 */
 .toggle-header-btn::after {
     content: "\25B4";
@@ -238,7 +249,7 @@
 .toggle-header-btn.active::after {
     content: "\25BE";
     /* 上下箭头符号 */
-    transform: rotate(120deg);
+    transform: rotate(-120deg);
 }
 
 .content,
