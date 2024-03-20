@@ -1,6 +1,7 @@
 // 定義圖片數組
 var images = [];
 
+// 圖片文件夾路徑
 var folderPath = '../img/TOP09/images/';
 
 // 圖片數量
