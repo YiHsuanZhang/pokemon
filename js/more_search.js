@@ -149,21 +149,12 @@ document.addEventListener("DOMContentLoaded", function () {
         document.querySelector('.poke-number-header').classList.toggle('moved');
     });
 
-    // 第二個事件監聽器不再需要，因為添加到了第一個事件監聽器中
-});
+    const loadMoreBtn = document.getElementById('load-more');
+    const secondPokemonListBox = document.querySelector('.pokemon-list-box:nth-child(2)');
 
-
-document.addEventListener('DOMContentLoaded', function () {
-    const header = document.querySelector('.poke-number-header');
-    const body = document.querySelector('.poke-number-body');
-
-    header.addEventListener('click', function () {
-        body.classList.toggle('expanded');
-        // 切换背景图片
-        if (body.classList.contains('expanded')) {
-            header.style.backgroundImage = "url('../img/TOP09/sort_open_bg.png')";
-        } else {
-            header.style.backgroundImage = "url('../img/TOP09/sort_close_bg.png')";
-        }
+    loadMoreBtn.addEventListener('click', function(event) {
+        event.preventDefault(); // 防止默认链接行为
+        secondPokemonListBox.style.display = 'flex'; // 将第二个 .pokemon-list-box 设置为 flex 布局
+        secondPokemonListBox.style.flexWrap = 'wrap'; // 设置为换行
     });
 });

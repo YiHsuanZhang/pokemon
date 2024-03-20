@@ -58,7 +58,7 @@
   max-width: 100%;
   margin: 0 43%;
   padding: 0 2%;
-  top: 5%;
+  top: 1.5%;
   z-index: 2;
   font-size: 25px;
   color: black;
@@ -410,12 +410,17 @@
   box-sizing: border-box;
 }
 
+.pokemon_list_banner:hover img{
+  opacity: 0.6;
+}
+
 .pokemon_list_banner img {
   width: 100%;
   max-width: 100%;
   padding: 1px 0;
   margin: 0 0 15px 0;
   display: block;
+  transition: opacity 0.8s ease;
 }
 
 .banner_box {
@@ -818,15 +823,31 @@ input[type="range"] {
 
 .pokemon-list-box{
   max-width: 1400px;
-  padding: 2em 3%;
+  padding: 1em 3%;
   margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pokemon-list-box:nth-child(n+2){
+  display: none;
+}
+
+.pokemon-list-box:nth-child(2)::after {
+  content: "";
+  display: flex;
+  clear: both;
+  flex-wrap: wrap;
 }
 
 .content_bgi_body{
   position: relative;
-  float: left;
+  float: none;
   display: block;
-  width: 25%;
+  width: calc(25% - 20px); /* 通过减去外边距来避免列之间的间隙 */
+  margin: 0 10px;
+  height: 550px;
 }
 
 .content_bgi{
@@ -890,4 +911,32 @@ input[type="range"] {
   text-align: center;
   padding: 1% 2%;
   margin: 0 3%;
+}
+
+.load-bigmore-body{
+  width: 100%;
+  display: block;
+  padding-bottom: 3%;
+  text-align: center;
+}
+
+.loadmore{
+  display: block;
+  max-width: 385px;
+  margin: auto;
+  background: transparent url(../img/TOP09/morebtn_bg.png) 50% 50% no-repeat;
+  background-size: 100% auto;
+}
+
+.load-bigmore{
+  position: relative;
+  left: 0;
+  list-style: none;
+  transform: translateY(30%);
+  color: #b3eafe;
+  height: 51px;
+  margin: auto;
+  border-radius: 50px;
+  text-shadow: 0 0 5px #b3eafe, 0 0 5px #b3eafe;
+  font-size: 18px;
 }
