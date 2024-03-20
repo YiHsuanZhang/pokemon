@@ -1,19 +1,14 @@
 // 定義圖片數組
 var images = [];
 
-// 取得程式檔案的路徑
-var scriptPath = document.currentScript.src;
-var scriptFolder = scriptPath.substring(0, scriptPath.lastIndexOf('/'));
-
-// 圖片文件夾相對路徑
-var relativeFolderPath = scriptFolder + '/../img/TOP09/images/';
+var folderPath = '../img/TOP09/images/';
 
 // 圖片數量
 var numberOfImages = 90;
 
 // 循環生成圖片路徑
 for (var i = 1; i <= numberOfImages; i++) {
-  images.push(relativeFolderPath + 'cc' + i + '.png');
+  images.push(folderPath + 'cc' + i + '.png');
 }
 
 // 當頁面加載完成時觸發的函數
