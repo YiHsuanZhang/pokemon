@@ -149,6 +149,25 @@ document.addEventListener("DOMContentLoaded", function () {
         document.querySelector('.poke-number-header').classList.toggle('moved');
     });
 
+});
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const header = document.querySelector('.poke-number-header');
+    const body = document.querySelector('.poke-number-body');
+
+    header.addEventListener('click', function () {
+        body.classList.toggle('expanded');
+        // 切换背景图片
+        if (body.classList.contains('expanded')) {
+            header.style.backgroundImage = "url('../img/TOP09/sort_open_bg.png')";
+        } else {
+            header.style.backgroundImage = "url('../img/TOP09/sort_close_bg.png')";
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
     const loadMoreBtn = document.getElementById('load-more');
     const secondPokemonListBox = document.querySelector('.pokemon-list-box:nth-child(2)');
 
