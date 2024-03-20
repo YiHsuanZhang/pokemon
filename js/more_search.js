@@ -1,6 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const pokeMoreNumber = document.querySelector('.poke-number-header');
-    pokeMoreNumber.style.backgroundImage = "url('../img/TOP09/sort_close_bg.png')";
     const colorBoxes = document.querySelectorAll('.color_box');
 
     function countSelected() {
@@ -151,26 +149,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+const header = document.querySelector('.poke-number-header');
+const relativeFolderPath = '../img/TOP09/';
+header.style.backgroundImage = "url(" + relativeFolderPath + 'sort_close_bg.png)';
 
-document.addEventListener('DOMContentLoaded', function () {
-    const header = document.querySelector('.poke-number-header');
+// 監聽 poke-number-header 點擊事件
+header.addEventListener('click', function () {
     const body = document.querySelector('.poke-number-body');
-
-    header.addEventListener('click', function () {
-        body.classList.toggle('expanded');
-        // 切换背景图片
-        if (body.classList.contains('expanded')) {
-            header.style.backgroundImage = "url('../img/TOP09/sort_open_bg.png')";
-        } else {
-            header.style.backgroundImage = "url('../img/TOP09/sort_close_bg.png')";
-        }
-    });
+    body.classList.toggle('expanded');
+    // 切換背景圖片
+    if (body.classList.contains('expanded')) {
+        header.style.backgroundImage = "url(" + relativeFolderPath + 'sort_open_bg.png)';
+    } else {
+        header.style.backgroundImage = "url(" + relativeFolderPath + 'sort_close_bg.png)';
+    }
 });
 
 document.addEventListener("DOMContentLoaded", function() {
     const loadMoreBtn = document.getElementById('load-more');
     const secondPokemonListBox = document.querySelector('.pokemon-list-box:nth-child(2)');
-
+    
     loadMoreBtn.addEventListener('click', function(event) {
         event.preventDefault(); // 防止默认链接行为
         secondPokemonListBox.style.display = 'flex'; // 将第二个 .pokemon-list-box 设置为 flex 布局
